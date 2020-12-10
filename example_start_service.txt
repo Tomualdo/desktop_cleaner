@@ -1,0 +1,2 @@
+to setup windows service
+nssm.exe install "clean_desk" "C:\Users\...\.cleaner_env\Scripts\python.exe" "C:\Users\...\cleandesk.py"

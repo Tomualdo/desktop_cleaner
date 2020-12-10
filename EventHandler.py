@@ -48,7 +48,7 @@ class EventHandler(FileSystemEventHandler):
         self.destination_root = destination_root.resolve()
 
     def on_modified(self, event):
-        sleep(5)
+        sleep(60)
         for child in self.watch_path.iterdir():
             # skips directories and non-specified extensions
             if child.is_file() and child.suffix.lower() in extension_paths:
